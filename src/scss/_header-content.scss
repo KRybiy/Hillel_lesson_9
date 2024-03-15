@@ -1,0 +1,37 @@
+@import 'variables';
+@import 'colors';
+
+.content {
+  max-width: $container-sm;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 44px;
+
+  &__title {
+    padding-top: 160px;
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  &__description {
+    color: $description;
+    font-weight: 400;
+    font-family: $font-family;
+    font-size: $font-size;
+    line-height: 26.25px;
+  }
+
+  &__link {
+    background-color: $blue;
+    color: $white;
+    letter-spacing: $letter-spacing;
+    min-width: 225px;
+    min-height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 14px;
+  }
+}

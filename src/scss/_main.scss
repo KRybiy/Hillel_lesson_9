@@ -1,0 +1,79 @@
+@import 'variables';
+@import 'colors';
+
+@mixin section__title {
+  font-weight: 500;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 38px;
+}
+@mixin section__description {
+  color: $description;
+  text-align: center;
+  line-height: 26.25px;
+  font-weight: 400;
+}
+
+.about {
+  padding-top: 112px;
+  padding-bottom: 92px;
+  background-color: $almost-white;
+  
+  &__title {
+    @include section__title;
+  }
+  
+  &__description {
+    @include section__description;
+  }
+}
+
+.experience {
+  background-color: $blue;
+  padding: 100px 0 96px 0;
+  color: $white;
+
+  &__flex-container {
+    display: flex;
+    gap: $gap-lg;
+  }
+
+  &__item {
+    display: flex;
+    gap: $gap;
+
+    &__number {
+      font-size: 21px;
+      font-weight: 500;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+  }
+}
+
+.process {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  background-color: $light-gray;
+  
+  &__title {
+    @include section__title;
+  }
+  
+  &__description {
+    @include section__description;
+  }
+}
+
+.video {
+  background-color: $light-gray;
+  padding-bottom: 95px;
+
+  &__iframe {
+    border: 0;
+    height: 600px;
+    width: 100%;
+  }
+}

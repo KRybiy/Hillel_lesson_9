@@ -1,0 +1,21 @@
+@import 'variables';
+@import 'colors';
+
+.navbar {
+  &__list {
+    display: flex;
+    column-gap: $gap-lg;
+  }
+  &__link {
+    color: $black;
+    font-weight: 400;
+    letter-spacing: $letter-spacing;
+    display: block;
+    transition: scale 0.1s;
+    &:hover {
+      color: $blue;
+      transform: scale(1.1);
+    }
+  }
+  
+}

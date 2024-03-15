@@ -1,0 +1,11 @@
+@import 'variables';
+@import 'colors';
+@import 'navbar';
+@import 'header-content';
+
+.header {
+  background-color: $light-gray;
+  padding-top: 79px;
+  padding-bottom: 141px;
+}
+

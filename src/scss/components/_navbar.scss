@@ -1,5 +1,4 @@
-@import 'variables';
-@import 'colors';
+@use '../abstracts' as *;
 
 .navbar {
   &__list {
@@ -15,6 +14,9 @@
     &:hover {
       color: $blue;
       transform: scale(1.1);
+    }
+    &__active {
+      color: $blue;
     }
   }
   

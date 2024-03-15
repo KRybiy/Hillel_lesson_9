@@ -1,5 +1,4 @@
-@import 'variables';
-@import 'colors';
+@use '../abstracts' as *;
 
 @mixin section__title {
   font-weight: 500;

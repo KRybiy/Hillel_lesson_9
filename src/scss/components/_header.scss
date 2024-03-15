@@ -1,7 +1,4 @@
-@import 'variables';
-@import 'colors';
-@import 'navbar';
-@import 'header-content';
+@use '../abstracts' as *;
 
 .header {
   background-color: $light-gray;

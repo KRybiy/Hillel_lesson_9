@@ -1,4 +1,4 @@
-@import 'colors';
+@use '../abstracts' as *;
 
 .footer {
   background-color: $blue;
